@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+/*           기본 스타일           */
+* { 
+  margin: 0; padding: 0; box-sizing: border-box; 
+  font-family: "Do Hyeon", sans-serif; 
+  font-style: normal; letter-spacing: 1px;
+}
+ul { list-style: none; }
+a { text-decoration: none; color: #000; }
+
+
+/*           내가 만든 스타일           */
+.w1200 { width: 1200px; margin: auto; }
+.dp_f { display: flex; }
+
+
+/*          인사말          */
+#ceo {
+  height: 1420px;
+  /* border: 5px solid yellow; */
+}
+#ceo>p {
+  width: 1000px;
+  margin-top: 100px;
+  margin-left: 10%;
+  font-family: "sans-serif";
+  font-size: 28px; 
+  text-align: justify;
+  line-height: 2;
+  /* border: red 1px solid; */
+}
+#ceo .ceo_img {
+  margin-left: 38%;
+}
+#ceo .ceo_img>span {
+  /* display: block; */
+  color: #000;
+  padding-top: 300px;
+  padding-right: 20px;
+  text-align: right;
+  /* border: rgb(89, 0, 255) 1px solid; */
+}
+#ceo .ceo_img p {
+  width: 250px;
+  font-size: 25px;
+  /* border: red 1px solid; */
+}
+#ceo .ceo_img h2 {
+  padding-left: 120px;
+  font-size: 50px;
+}
+#ceo .ceo_img img {
+  width: 400px; height: 400px;
+  border-radius: 5%;
+}
+
+
+/*          반응형 시작          */
+
+
+/*            서브 페이지 모바일 반응형           */
+@media screen and (max-width: 768px) {
+  /* 태블릿 이하 기기에서 적용할 스타일 */
+
+    /*          인사말          */   
+    #ceo {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+    }
+
+    #ceo>p {
+      width: 100%;
+      padding: 40px;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    #ceo .ceo_img {
+      margin-left: 0;
+      padding-top: 10px;
+      padding-right: 30px;
+      justify-content: end;
+    }
+    #ceo .ceo_img>span {
+      padding-top: 140px;
+    }
+    #ceo .ceo_img p {
+      width: 250px;
+      padding: 0;
+      font-size: 16px;
+    }
+    #ceo .ceo_img h2 {
+      padding: 0;
+      font-size: 30px;
+    }
+    #ceo .ceo_img img {
+      width: 200px; height: 200px;
+      margin: 0 !important;
+    }
+  
+}
+/*          /반응형 끝          */
